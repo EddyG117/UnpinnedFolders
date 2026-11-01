@@ -1,0 +1,11 @@
+# Only the mod's public files are tracked. Everything else in this folder
+# (plan notes, test tools, the test browser profile) stays private.
+/*
+!/.gitignore
+!/chrome.css
+!/preferences.json
+!/readme.md
+!/LICENSE
+!/Screenshots/
+/Screenshots/*
+!/Screenshots/StoreImage.png

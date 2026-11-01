@@ -1,0 +1,7 @@
+[
+  {
+    "property": "browser.tabs.groups.enabled",
+    "label": "Enable tab groups (restart Zen after changing)",
+    "type": "checkbox"
+  }
+]
