@@ -1,13 +1,31 @@
 # Unpinned Folders
 
-Lets you use tab groups in Zen's normal (unpinned) tabs section, styled to look exactly like Zen's own folders. Zen folders for pinned tabs keep working as before.
+A [Zen Browser](https://zen-browser.app) mod that lets you use tab groups in the normal (unpinned) tabs section, styled to look exactly like Zen's own folders. Zen folders for pinned tabs keep working as before.
 
-## Setup
+![Unpinned Folders: a pinned Zen folder above two folder-style tab groups in the normal tabs section](Screenshots/StoreImage.png)
 
-1. Open Zen's settings, go to **Zen Mods**, and click the settings button on this mod.
-2. Turn on **Enable tab groups**.
-3. Restart Zen.
-4. Right-click a normal tab and choose **Add Tab to New Group**.
+## Install
+
+Zen's official Mods store isn't accepting new mods right now, so this mod installs through Zen's built-in custom styles file (`userChrome.css`). It takes about two minutes.
+
+1. **Turn on two settings.** In Zen, type `about:config` in the address bar and press Return (click **Accept the Risk and Continue** if asked). Search for each setting below and click its toggle (⇄) so it says **true**:
+   - `toolkit.legacyUserProfileCustomizations.stylesheets` (lets Zen load custom styles)
+   - `browser.tabs.groups.enabled` (turns on tab groups)
+2. **Open your profile folder.** Type `about:support` in the address bar. In the table near the top, find **Profile Folder** and click **Open Folder** (macOS: **Show in Finder**).
+3. **Open or create the `chrome` folder.** Inside the profile folder, open the folder named `chrome`. If there isn't one, create a new folder with exactly that name.
+4. **Add the mod's styles.**
+   - If `chrome` has **no** file named `userChrome.css`: open [chrome.css](https://raw.githubusercontent.com/EddyG117/UnpinnedFolders/main/chrome.css), press ⌘S (Ctrl+S on Windows/Linux), and save it into the `chrome` folder as `userChrome.css`. Make sure the name is exactly that, without an extra `.txt` at the end.
+   - If `userChrome.css` **already exists**: open it in a text editor, then copy everything from [chrome.css](https://raw.githubusercontent.com/EddyG117/UnpinnedFolders/main/chrome.css) and paste it at the end.
+5. **Quit Zen completely** (⌘Q on macOS) and reopen it.
+6. **Make a group:** right-click a normal tab and choose **Add Tab to New Group**.
+
+### Updating
+
+Repeat step 4 with the latest [chrome.css](https://raw.githubusercontent.com/EddyG117/UnpinnedFolders/main/chrome.css), replacing the old copy, then restart Zen.
+
+### Uninstalling
+
+Delete `userChrome.css` from the `chrome` folder (or remove the pasted part), set `browser.tabs.groups.enabled` back to **false**, and restart Zen.
 
 ## Using groups
 
